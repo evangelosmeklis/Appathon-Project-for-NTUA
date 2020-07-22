@@ -110,24 +110,6 @@ random {
   background: #47c9af;
 }
 
-sidetext {
+mytext {
   font-size: 30px;
-  position: fixed;
-  top: 20%;
-  left: 5%;
-  right: 65%;
-}
-
-righttext {
-  font-size: 30px;
-  position: fixed;
-  top: 20%;
-  left: 65%;
-  right: 5%;
-}
-
-img {
-  position: fixed;
-  top: 50%;
-  left: 63%;
 }
