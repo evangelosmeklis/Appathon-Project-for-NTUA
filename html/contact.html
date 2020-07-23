@@ -18,6 +18,7 @@
         <ul>
           <li><a href="main.html">Home</a></li>
           <li><a href="search.html">Search</a></li>
+          <li><a href="famous.html">Search for publications</a></li>
           <li><a href="moreinfo.html">More Info</a></li>
           <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
@@ -29,7 +30,8 @@
             type="text"
             id="fname"
             name="firstname"
-            placeholder="Your name.."
+            value="Evangelos"
+            readonly
           />
 
           <label for="lname">Last Name</label>
@@ -37,26 +39,33 @@
             type="text"
             id="lname"
             name="lastname"
-            placeholder="Your last name.."
+            value="Meklis"
+            readonly
           />
 
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="greece">Greece</option>
-          </select>
+          <label for="am">AM</label>
+          <input type="text" id="am" name="am" value="03116644" readonly />
 
-          <label for="subject">Subject</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something.."
-            style="height: 200px;"
-          ></textarea>
+          <label for="semester">Semester</label>
+          <input type="text" id="mail" name="mail" value="8" readonly />
 
-          <input type="submit" value="Submit" />
+          <label for="email">NTUA Email</label>
+          <input
+            type="text"
+            id="mail"
+            name="mail"
+            value="el16644@central.ntua.gr"
+            readonly
+          />
+
+          <label for="email">Personal Email</label>
+          <input
+            type="text"
+            id="mail"
+            name="mail"
+            value="evangelosmeklis@windowslive.gr"
+            readonly
+          />
         </form>
       </div>
       <random>
