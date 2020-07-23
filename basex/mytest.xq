@@ -2,6 +2,7 @@ declare option output:method 'html';
 declare option db:chop 'no';
 declare variable $mytitle as xs:string external;
 declare variable $myrank as xs:integer external;
+declare variable $mydate as xs:string external;
 
 let $in :=
 <ul>{
@@ -13,6 +14,7 @@ for $n in $i
 let $names := $n/intervention_name
 where $doc/clinical_study/brief_title[contains(.,$mytitle)]
   and $doc/clinical_study/intervention/intervention_type= 'Drug'
+  and $doc/clinical_study/study_first_submitted[contains(.,$mydate)]
 return <li>{$names}</li>
 
 for $mynames in $int
