@@ -149,19 +149,19 @@
       </ul>
     <div class="main-block">
       <h1>Order Form</h1>
-      <form action="/">
+      <form onsubmit="window.open('http://localhost:8984/rest?run=mytest.xq');">
         <div class="info">
-          <input class="fname" type="text" name="name" placeholder="Please type the disease you want to search for">
-          <input type="date" name="name" placeholder="Starting date of clinical trial">
+          <input class="fname" type="text" name="disease" placeholder="Please type the disease you want to search for">
+          <input type="date" name="dateoftrial" placeholder="Starting date of clinical trial">
         </div>
-        <h3>Would you like to be provided te value range of the dosage for each medicine?</h3>
+        <h3>Would you like to be provided the value range of the dosage for each medicine?</h3>
         <div class="metod">
           <div> 
-            <input type="radio" value="none" id="radioOne" name="metod" checked/>
+            <input type="radio" value="yes" id="radioOne" name="range" checked/>
             <label for="radioOne" class="radio">Yes</label>
           </div>
           <div>
-            <input type="radio" value="none" id="radioTwo" name="metod" />
+            <input type="radio" value="no" id="radioTwo" name="range" />
             <label for="radioTwo" class="radio">No</label>
           </div>
         </div>
