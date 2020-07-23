@@ -154,6 +154,13 @@
           <input class="fname" type="text" name="disease" placeholder="Please type the disease you want to search for">
           <input type="date" name="dateoftrial" placeholder="Starting date of clinical trial">
         </div>
+        <label for="res">How many results do you want to keep?</label>
+        <select id="res" name="res">
+          <option value=5>5 (Five)</option>
+          <option value=10>10 (Ten)</option>
+          <option value=15>15 (Fifteen)</option>
+          <option value=20>20 (Twenty)</option>
+        </select>
         <h3>Would you like to be provided the value range of the dosage for each medicine?</h3>
         <div class="metod">
           <div> 
@@ -171,8 +178,9 @@
         function myFunction(){
           var x= document.getElementById("frm1");
           var title=x.elements[0].value;
+          var res=x.elements[2].value;
           var date="";
-          window.open('http://localhost:8984/rest?run=mytest.xq&mytitle='+ title);
+          window.open('http://localhost:8984/rest?run=mytest.xq&mytitle='+ title + '&myrank=' + res);
         }
       </script>
     </div>
