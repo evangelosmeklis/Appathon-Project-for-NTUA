@@ -152,7 +152,6 @@
       <form id="frm1">
         <div class="info">
           <input class="fname" type="text" name="disease" placeholder="Please type the disease you want to search for">
-          <input type="date" name="dateoftrial" placeholder="Starting date of clinical trial">
         </div>
         <label for="res">How many results do you want to keep?</label>
         <select id="res" name="res">
@@ -161,26 +160,37 @@
           <option value=15>15 (Fifteen)</option>
           <option value=20>20 (Twenty)</option>
         </select>
-        <h3>Would you like to be provided the value range of the dosage for each medicine?</h3>
+        <h3>Would you like to  provided the year the study was first submitted?</h3>
         <div class="metod">
           <div> 
-            <input type="radio" value="yes" id="radioOne" name="range" checked/>
-            <label for="radioOne" class="radio">Yes</label>
+            <input type="radio" value="yes" id="connection-invite-other-radio" name="range" checked/>
+            <label for="connection-invite-other-radio" class="radio">Yes</label>
           </div>
           <div>
-            <input type="radio" value="no" id="radioTwo" name="range" />
-            <label for="radioTwo" class="radio">No</label>
+            <input type="radio" value="no" id="connection-invite-other-radio1" name="range" />
+            <label for="connection-invite-other-radio1" class="radio">No</label>
           </div>
+          <input type="number" max='2021' name="dateoftrial" id="connection-invite-other"  placeholder="Year the study was first submiitted ">
         </div>
         <button type="button" class="button" onClick="myFunction()">Submit</button>
       </form>
       <script>
+        $(document).ready(function(){
+          $('input[type=radio]').change(function(){
+            if ($('#connection-invite-other-radio').is(':checked')) {
+              $('#connection-invite-other').show();
+            } else{
+              $('#connection-invite-other').hide();
+            }
+          });
+        });
+
         function myFunction(){
           var x= document.getElementById("frm1");
           var title=x.elements[0].value;
+          var dt=x.elements[1].value;
           var res=x.elements[2].value;
-          var date="";
-          window.open('http://localhost:8984/rest?run=mytest.xq&mytitle='+ title + '&myrank=' + res);
+          window.open('http://localhost:8984/rest?run=mytest.xq&mytitle='+ title + '&myrank=' + res + '&mydate=' + dt);
         }
       </script>
     </div>
