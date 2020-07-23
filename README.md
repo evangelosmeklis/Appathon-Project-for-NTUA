@@ -14,6 +14,10 @@ The project description is the following:
 
 "This project will include the usage of the dataset provided by the site https://clinicaltrials.gov. The dataset will be used to present in a web application, the 10 most used medicines for a specific disease, as well as the frequency of the usage. Moreover, the web application will provide the value range of the dosage for each medicine. Finally, the web app will give the user the opportunity to search using a filter based on the starting date of the clinical trial. The languages that will be used for this project will be JavaScript and HTML"
 
+# :world_map: Instructions for deployment
+
+Οι οδηγίες για την εγκατάσταση και το τρέξιμο της εφαρμογής θα δίννται αναλυτικά στο αρχείο instructions.txt
+
 # :pencil: Authors
 
 The author of this project is: Evangelos Meklis
