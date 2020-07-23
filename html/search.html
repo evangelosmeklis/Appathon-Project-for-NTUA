@@ -149,7 +149,7 @@
       </ul>
     <div class="main-block">
       <h1>Order Form</h1>
-      <form onsubmit="window.open('http://localhost:8984/rest?run=mytest.xq');">
+      <form id="frm1">
         <div class="info">
           <input class="fname" type="text" name="disease" placeholder="Please type the disease you want to search for">
           <input type="date" name="dateoftrial" placeholder="Starting date of clinical trial">
@@ -165,8 +165,16 @@
             <label for="radioTwo" class="radio">No</label>
           </div>
         </div>
-        <button href="/" class="button">Submit</button>
+        <button type="button" class="button" onClick="myFunction()">Submit</button>
       </form>
+      <script>
+        function myFunction(){
+          var x= document.getElementById("frm1");
+          var title=x.elements[0].value;
+          var date="";
+          window.open('http://localhost:8984/rest?run=mytest.xq&mytitle='+ title);
+        }
+      </script>
     </div>
       <random>
         Created by Evangelos Meklis (03116644)
