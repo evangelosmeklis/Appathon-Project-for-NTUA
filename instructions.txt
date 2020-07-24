@@ -1,0 +1,11 @@
+Disclaimer: Το project στήθηκε σε περιβάλλον Ubuntu 18.08 (Υπάρχει η δυνατότητα τρεξίματος του σε Windows)
+
+1. Για το κατέβασμα των δεδομένων.
+
+Το κατέβασμα των δεδομένων γίνεται από το εξής link: https://clinicaltrials.gov/AllPublicXML.zip
+
+To αρχείο αυτό περιέχει αρκετούς φακέλους με χιλιάδες αρχεία AllPublicXML
+
+2. Για το parsing των αρχείων XML 
+
+To parsing γίνεται με το πλήρες πακέτο της εφαρμογής BaseX το οποίο διατίθεται δωρεάν στο συγκεκριμένο link : http://files.basex.org/releases/9.4/BaseX94.zip
