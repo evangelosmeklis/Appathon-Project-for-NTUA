@@ -16,7 +16,7 @@ The project description is the following:
 
 # :world_map: Instructions for deployment
 
-Οι οδηγίες για την εγκατάσταση και το τρέξιμο της εφαρμογής θα δίνoται αναλυτικά στο αρχείο instructions.txt
+Οι οδηγίες για την εγκατάσταση και το τρέξιμο της εφαρμογής θα δίνoνται αναλυτικά στο αρχείο instructions.txt
 
 # :pencil: Authors
 
