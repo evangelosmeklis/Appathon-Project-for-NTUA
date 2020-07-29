@@ -13,10 +13,10 @@ let $i := $doc/clinical_study/intervention
 let $wnames := $doc/clinical_study/condition_browse/mesh_term
 for $n in $i 
 let $names := $n/intervention_name
-where $doc/clinical_study/condition_browse/mesh_term[contains(.,$mytitle)]
+where $doc/clinical_study/condition_browse/mesh_term[contains(lower-case(.),lower-case($mytitle))]
   and $doc/clinical_study/intervention/intervention_type= 'Drug'
   and $doc/clinical_study/study_first_submitted[contains(.,$mydate)]
-return <li>{$names}</li>
+return <li>{lower-case($names)}</li>
 
 for $mynames in $int
 let $d := $mynames
