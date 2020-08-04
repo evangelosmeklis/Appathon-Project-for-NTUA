@@ -18,6 +18,8 @@ The project description is the following:
 
 Οι οδηγίες για την εγκατάσταση και το τρέξιμο της εφαρμογής θα δίνoνται αναλυτικά στο αρχείο instructions.txt
 
+To βίντεο που γίνεται η περιγραφή της εργασίας βρίσκεται στο παρακάτω λινκ: https://www.youtube.com/watch?v=uLYQqqxR24s
+
 # :pencil: Authors
 
 The author of this project is: Evangelos Meklis
